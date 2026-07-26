@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML Document Structure</title>
+  </head>
+
+  <body>
+    <h1>HTML Document Structure</h1>
+
+    <p>
+      HTML structure means the basic arrangement of elements in an HTML
+      document. Every HTML webpage generally follows a standard structure.
+    </p>
+
+    <hr />
+
+    <h2>Basic HTML Structure</h2>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;This is my first webpage.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <p>Now let's understand each part.</p>
+
+    <hr />
+
+    <h2>1. &lt;!DOCTYPE html&gt;</h2>
+
+    <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+
+    <p>This tells the browser:</p>
+
+    <blockquote>This document is written using HTML5.</blockquote>
+
+    <p>It is called a <strong>DOCTYPE declaration</strong>.</p>
+    <p>It is not an HTML element.</p>
+
+    <h3>Important</h3>
+
+    <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+
+    <p>It should be placed at the very top of the HTML document.</p>
+
+    <hr />
+
+    <h2>2. &lt;html&gt; Element</h2>
+
+    <pre><code>&lt;html lang="en"&gt;</code></pre>
+
+    <p>
+      The <code>&lt;html&gt;</code> element is the root element of the entire
+      HTML document.
+    </p>
+
+    <p>All other HTML elements are written inside it.</p>
+
+    <pre><code>&lt;html&gt;
+    &lt;!-- Everything goes inside here --&gt;
+&lt;/html&gt;</code></pre>
+
+    <h3>lang Attribute</h3>
+
+    <pre><code>&lt;html lang="en"&gt;</code></pre>
+
+    <p>
+      <code>lang="en"</code> tells the browser that the page language is
+      English.
+    </p>
+
+    <p>For Bangla:</p>
+
+    <pre><code>&lt;html lang="bn"&gt;</code></pre>
+
+    <p>For Bengali websites, you can use:</p>
+
+    <pre><code>&lt;html lang="bn"&gt;</code></pre>
+
+    <hr />
+
+    <h2>3. &lt;head&gt; Element</h2>
+
+    <pre><code>&lt;head&gt;
+&lt;/head&gt;</code></pre>
+
+    <p>
+      The <code>&lt;head&gt;</code> contains information about the webpage. Most
+      of its content is not directly visible on the webpage.
+    </p>
+
+    <h3>Example</h3>
+
+    <pre><code>&lt;head&gt;
+
+    &lt;meta charset="UTF-8"&gt;
+
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+    &lt;title&gt;My Website&lt;/title&gt;
+
+&lt;/head&gt;</code></pre>
+
+    <p>The <code>&lt;head&gt;</code> commonly contains:</p>
+
+    <ul>
+      <li><code>&lt;title&gt;</code></li>
+      <li><code>&lt;meta&gt;</code></li>
+      <li><code>&lt;link&gt;</code></li>
+      <li><code>&lt;style&gt;</code></li>
+      <li><code>&lt;script&gt;</code></li>
+    </ul>
+
+    <hr />
+
+    <h2>4. &lt;meta charset="UTF-8"&gt;</h2>
+
+    <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+
+    <p>This tells the browser which character encoding to use.</p>
+
+    <p>UTF-8 supports many languages and symbols, including:</p>
+
+    <ul>
+      <li>English</li>
+      <li>বাংলা</li>
+      <li>中文</li>
+      <li>العربية</li>
+      <li>😀</li>
+    </ul>
+
+    <p>So it is commonly included in every HTML document.</p>
+
+    <hr />
+
+    <h2>5. Viewport Meta Tag</h2>
+
+    <pre><code>&lt;meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+&gt;</code></pre>
+
+    <p>This is very important for responsive websites.</p>
+
+    <p>It tells the browser:</p>
+
+    <blockquote>
+      Make the webpage width equal to the device's screen width.
+    </blockquote>
+
+    <p>Without this, a website may not display properly on mobile devices.</p>
+
+    <hr />
+
+    <h2>6. &lt;title&gt; Element</h2>
+
+    <pre><code>&lt;title&gt;My Website&lt;/title&gt;</code></pre>
+
+    <p>The title appears in:</p>
+
+    <ul>
+      <li>Browser tab</li>
+      <li>Bookmarks</li>
+      <li>Search engine results</li>
+    </ul>
+
+    <h3>Example</h3>
+
+    <pre><code>&lt;head&gt;
+    &lt;title&gt;Infa's Portfolio&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+
+    <p>The browser tab may show:</p>
+
+    <p><strong>Infa's Portfolio</strong></p>
+
+    <hr />
+
+    <h2>7. &lt;body&gt; Element</h2>
+
+    <pre><code>&lt;body&gt;
+&lt;/body&gt;</code></pre>
+
+    <p>
+      The <code>&lt;body&gt;</code> contains all the content visible on the
+      webpage.
+    </p>
+
+    <h3>Example</h3>
+
+    <pre><code>&lt;body&gt;
+
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+    &lt;img src="image.jpg" alt="A beautiful image"&gt;
+
+    &lt;button&gt;Click Me&lt;/button&gt;
+
+&lt;/body&gt;</code></pre>
+
+    <p>
+      Everything the user sees generally goes inside <code>&lt;body&gt;</code>.
+    </p>
+
+    <hr />
+
+    <h2>Complete Structure Diagram</h2>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+        │
+        ▼
+    &lt;html&gt;
+       │
+       ├── &lt;head&gt;
+       │      │
+       │      ├── &lt;meta&gt;
+       │      ├── &lt;title&gt;
+       │      ├── &lt;link&gt;
+       │      └── &lt;style&gt;
+       │
+       └── &lt;body&gt;
+              │
+              ├── &lt;header&gt;
+              ├── &lt;nav&gt;
+              ├── &lt;main&gt;
+              │     ├── &lt;section&gt;
+              │     └── &lt;article&gt;
+              │
+              └── &lt;footer&gt;</code></pre>
+
+    <hr />
+
+    <h2>Modern Semantic HTML Structure</h2>
+
+    <p>A professional website often looks like this:</p>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+
+    &lt;meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    &gt;
+
+    &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;header&gt;
+        &lt;h1&gt;My Website&lt;/h1&gt;
+
+        &lt;nav&gt;
+            &lt;a href="/"&gt;Home&lt;/a&gt;
+            &lt;a href="/about"&gt;About&lt;/a&gt;
+            &lt;a href="/contact"&gt;Contact&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+
+        &lt;section&gt;
+            &lt;h2&gt;About Me&lt;/h2&gt;
+            &lt;p&gt;This is the about section.&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h2&gt;My Services&lt;/h2&gt;
+            &lt;p&gt;These are my services.&lt;/p&gt;
+        &lt;/section&gt;
+
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;Copyright 2026&lt;/p&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+
+    <hr />
+
+    <h2>Important Semantic Elements</h2>
+
+    <h3>&lt;header&gt;</h3>
+
+    <p>Contains the header area of a webpage.</p>
+
+    <pre><code>&lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+&lt;/header&gt;</code></pre>
+
+    <p>Usually contains:</p>
+
+    <ul>
+      <li>Logo</li>
+      <li>Website name</li>
+      <li>Navigation menu</li>
+    </ul>
+
+    <h3>&lt;nav&gt;</h3>
+
+    <p>Contains navigation links.</p>
+
+    <pre><code>&lt;nav&gt;
+    &lt;a href="/"&gt;Home&lt;/a&gt;
+    &lt;a href="/about"&gt;About&lt;/a&gt;
+    &lt;a href="/contact"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+
+    <h3>&lt;main&gt;</h3>
+
+    <p>Contains the main content of the webpage.</p>
+
+    <pre><code>&lt;main&gt;
+    &lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;/main&gt;</code></pre>
+
+    <p>
+      A page should generally have one main <code>&lt;main&gt;</code> element.
+    </p>
+
+    <h3>&lt;section&gt;</h3>
+
+    <p>Groups related content.</p>
+
+    <pre><code>&lt;section&gt;
+    &lt;h2&gt;About Us&lt;/h2&gt;
+    &lt;p&gt;We build websites.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+
+    <h3>&lt;article&gt;</h3>
+
+    <p>Represents independent content.</p>
+
+    <p>Examples:</p>
+
+    <ul>
+      <li>Blog post</li>
+      <li>News article</li>
+      <li>Product card</li>
+      <li>Forum post</li>
+    </ul>
+
+    <pre><code>&lt;article&gt;
+    &lt;h2&gt;How to Learn HTML&lt;/h2&gt;
+    &lt;p&gt;HTML is the structure of a webpage.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+
+    <h3>&lt;footer&gt;</h3>
+
+    <p>Contains the bottom section of a webpage.</p>
+
+    <pre><code>&lt;footer&gt;
+    &lt;p&gt;© 2026 My Website&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+
+    <p>It may contain:</p>
+
+    <ul>
+      <li>Copyright information</li>
+      <li>Contact information</li>
+      <li>Social links</li>
+      <li>Additional navigation</li>
+    </ul>
+
+    <hr />
+
+    <h2>HTML Element Structure</h2>
+
+    <p>An HTML element usually has this structure:</p>
+
+    <pre><code>&lt;tagname attribute="value"&gt;
+    Content
+&lt;/tagname&gt;</code></pre>
+
+    <h3>Example</h3>
+
+    <pre><code>&lt;p class="text"&gt;
+    Hello World
+&lt;/p&gt;</code></pre>
+
+    <p>Here:</p>
+
+    <ul>
+      <li><code>&lt;p&gt;</code> → Opening tag</li>
+      <li><code>class="text"</code> → Attribute</li>
+      <li><code>Hello World</code> → Content</li>
+      <li><code>&lt;/p&gt;</code> → Closing tag</li>
+    </ul>
+
+    <p>Together, everything is called an <strong>HTML element</strong>.</p>
+
+    <hr />
+
+    <h2>Parent and Child Elements</h2>
+
+    <p>HTML elements can be nested inside other elements.</p>
+
+    <pre><code>&lt;body&gt;
+    &lt;h1&gt;Hello&lt;/h1&gt;
+    &lt;p&gt;Welcome to my website.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+
+    <p>Here:</p>
+
+    <ul>
+      <li><code>&lt;body&gt;</code> → Parent element</li>
+      <li><code>&lt;h1&gt;</code> → Child element</li>
+      <li><code>&lt;p&gt;</code> → Child element</li>
+    </ul>
+
+    <h3>Another Example</h3>
+
+    <pre><code>&lt;div&gt;
+    &lt;h2&gt;Title&lt;/h2&gt;
+
+    &lt;p&gt;
+        This is a paragraph.
+    &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+    <p>
+      The <code>&lt;div&gt;</code> is the parent, while
+      <code>&lt;h2&gt;</code> and <code>&lt;p&gt;</code> are children.
+    </p>
+
+    <hr />
+
+    <h2>The Most Important Structure to Remember</h2>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;!-- Information about the webpage --&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;!-- Visible webpage content --&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+
+    <h3>Think of it like this:</h3>
+
+    <ul>
+      <li>
+        <strong>&lt;!DOCTYPE html&gt;</strong> → Tells the browser the HTML
+        version
+      </li>
+      <li><strong>&lt;html&gt;</strong> → The entire webpage</li>
+      <li>
+        <strong>&lt;head&gt;</strong> → Information and settings about the
+        webpage
+      </li>
+      <li><strong>&lt;body&gt;</strong> → Everything visible to the user</li>
+    </ul>
+  </body>
+</html>
